@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
+    </title>
+
+
+    <link href="styles/contact.css" rel="stylesheet"  type="text/css"/>
+    
+     <link href="styles/main.css" rel="stylesheet" type="text/css" />
+
+    <link href="styles/home.css" rel="stylesheet" type="text/css"/>
+
+    <link href="styles/about.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+        hey
+    </asp:ContentPlaceHolder>
+
+   
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+           
+            <div class="menu">
+                <ul>
+                    <li class="navigation_first_item"><a href="Default.aspx">Home</a></li>
+                    <li><a href="About.aspx">About</a></li>
+                    <li><a href="contactUs.aspx">Contact Us</a></li>
+                    <li><a href="SignUp.aspx">Sign Up</a></li>
+                </ul>
+            </div> 
+
+            <div class="clear"></div>
+            
+
+
+
+            <div class="content">
+        <asp:ContentPlaceHolder id="contentBody" runat="server">
+
+      
+        </asp:ContentPlaceHolder>
+           </div>
+        
+            <div class="clear"></div>       
+        
+
+            <!-- Footer -->
+
+        <div class="footer">
+
+        <div class="footer-content">
+            <div class="footer-section about">
+                <a href="Default.aspx"><img src="myimages/incredible2.jpg" /> </a>
+                
+                <p style="color:white; font-family:Calibri; font-size:20px">
+                    The country is the most preferred tourist destinations for tourists from all across the world.
+
+                </p>
+                <div class="contact">
+                   <br /> <span style="color:white;"><img src="myimages/p_icon.png" style="width:20px; height:20px"/> &nbsp; 123-456-789</span> &nbsp <br />
+                    <span style="color:white;">   <img src="myimages/e_icon.png" style="width:20px; height:20px"/>       &nbsp; info@incredibleindia.com</span>
+                </div>
+
+                <div class="socials" style="margin-top:40px;">
+                    <a href="https://www.facebook.com/incredibleindia/" target="_blank"><img src="myimages/facebook.png" style="width:40px; height:40px;" /> </a>
+                    <a href="https://twitter.com/incredibleindia" target="_blank"><img src="myimages/twitter.png" style="width:40px; height:40px;" /> </a>
+                    <a href="https://www.youtube.com/channel/UCMxJPchGLE_CJ1MJbJy-xDQ" target="_blank"><img src="myimages/youtube.png" style="width:40px; height:40px;" /> </a>
+                    <a href="https://www.instagram.com/incredibleindia/" target="_blank"><img src="myimages/instagram.png" style="width:40px; height:40px;" /> </a>
+                       
+                    
+                </div>
+
+                </div>
+            <div class="footer-section links">
+                <h2 style="color:white;">Quick links</h2>
+                <br/>
+                <ul s>
+                   <a href="#"><li>Events</li></a>
+                    <a href="About.aspx"><li>Teams</li></a>
+                    <a href="gallery.aspx"><li>Gallery</li></a>
+                    <a href="#"><li>Terms & condition</li></a>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-form">
+                <h2 style="color:white;">Contact Us</h2>
+                <br/>
+                <form action="index.html" method="post">
+                    <input type="email" name="Email"  class="text-input contact-input" placeholder="Your email address..."  style="border-radius:6px; width:auto;"  /><br /> <br /><br />
+                    <textarea name="message" class="text-input contact-input" placeholder="your message..." style="width:230px; height:80px; border-radius:6px; "></textarea> <br />
+                    <button type="submit" class="btn btn-big" style="margin-top:15px; width:80px;">
+                        <i class="fas fa-envelope"></i>
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy Incredible India | Designed by our Team
+        </div>
+
+    </div>
+
+            <!-- /footer -->
+
+        </div>
+    
+    </form>
+</body>
+</html>

@@ -1,0 +1,169 @@
+﻿body {
+}
+.home_priest {
+    width:270px; 
+    height:276px;
+    margin-top:60px;
+    margin-left:50px;
+    float:left;
+    border-radius:8px;
+}
+#p1 {
+    text-align:center;
+    font-family:'Lucida Console';
+}
+.home_div1 {
+    margin-top:25px;
+    margin-left:351px;
+    width:659px;
+    height:166px;
+    font-family:Calibri; font-size:20px;font-style:oblique; text-align:center; text-decoration:solid;
+}
+.home_div2 p{
+    
+    text-align:center;
+    font-family:Calibri;
+    font-size:20px;
+    text-decoration:solid;
+}
+.home_div2 {
+    height:auto;
+    width: 1000px;
+
+
+    margin-top:200px;
+    margin-left:200px;
+    border-style: solid;
+   border-color: #2C4058;
+}
+
+
+
+.home_div3 {
+    
+    margin-left:30px;
+}
+
+
+.home_div4 {
+    height:500px;
+    width:1200px;
+    margin-top:30px;
+    margin-left:30px;
+}
+
+.jaipur {
+    border-radius:7px;
+    margin-left:50px;
+}
+
+.home_div4 p {
+    font-family:Calibri;
+    font-size:20px;
+    font-style:oblique;
+    text-decoration:solid;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("myimages/beach-daylight.jpg");
+
+  /* Full height */
+  height: 100%; 
+  
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+           /* _______________________Slider___________________*/
+
+
+
+* {
+     margin:0px 28px 0px 0px;
+     padding:0px;
+}
+
+.slider {
+    overflow:hidden;
+    width:70%;
+    height:70%;
+}
+
+    .slider figure div {
+        float: left;
+        width: 100%;
+    }
+
+    .slider figure img {
+        width:100%;
+        height:100vh;
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+        float:left;
+    }
+
+
+    .slider figure {
+        position: relative;
+        width: 400%;
+        margin:0;
+        animation: animate 20s infinite;
+    }
+
+/*p
+ {
+     position:fixed;
+     color:#fff;
+     font-size:70px;
+     text-align:center;
+     padding-top:250px;
+     background:rgba(0,0,0,0.5);
+     width:100%;
+     height:100vh;
+}*/
+
+
+@keyframes animate {
+    0% { left:0%;}
+    10% { left:0%;}
+    12% { left:-100%;}
+    22% { left:-100%;}
+
+    24% { left:-200%;}
+    34%  { left:-200%;}
+
+    36% { left:-300%;}
+    46% { left:-300%;}
+
+    48% { left:-400%;}
+    58% { left:-400%;}
+
+    60% { left:-300%;}
+    70% { left:-300%;}
+
+    72% { left:-200%;}
+    82% { left:-200%;}
+
+    84% { left:-100%;}
+    94% { left:-100%;} 
+
+    96% { left:0%;}
+      
+}
+
+
+/*   My slides*/
+
+.myslides {
+    display:none;
+}
+
+
+
+/*   Slider show middle  */
